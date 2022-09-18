@@ -1,0 +1,18 @@
+package com.constant;
+
+import com.helper.SvmClassifier;
+
+public class ServerConstants {
+	public static final String db_driver = "com.mysql.jdbc.Driver";
+	public static final String db_user = "root";
+	public static final String db_pwd = "";
+	public static final String db_url = "jdbc:mysql://localhost/baitalarmsvm";
+
+	public static final SvmClassifier svm = new SvmClassifier();
+	public static final String PROJECT_DATASET_DIR = "D:\\work\\project\\AntiPhishing-WebAndroid\\AntiPhishingWeb\\AntiPhishingWeb\\";
+	public static final String SVM_DIR = PROJECT_DATASET_DIR + "\\svm\\";
+	public static final String SVM_MODEL_FILE = SVM_DIR + "svm.model";
+	public static final String SVM_TRAINING_SET = SVM_DIR + "svmTraining.arff";
+	public static final String APPLICATION_NAME = "Cloudability";
+
+}

@@ -1,0 +1,83 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package com.helper;
+
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+import java.sql.Blob;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Set;
+
+import javax.imageio.ImageIO;
+import javax.swing.JOptionPane;
+
+import com.constant.ServerConstants;
+
+/**
+ * 
+ * @author Admin
+ */
+public class ConnectionManager extends DBUtils {
+
+	public static Connection getDBConnection() {
+		Connection conn = null;
+		try {
+			Class.forName(ServerConstants.db_driver);
+			conn = DriverManager.getConnection(ServerConstants.db_url,
+					ServerConstants.db_user, ServerConstants.db_pwd);
+			System.out.println("Got Connection");
+		} catch (SQLException ex) {
+			ex.printStackTrace();
+			JOptionPane.showMessageDialog(
+					null,
+					"Please start the mysql Service from XAMPP Console.\n"
+							+ ex.getMessage());
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		return conn;
+	}
+
+	public static void closeConnection(Connection conn) {
+		try {
+			conn.close();
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+
+	}
+
+	public static Boolean isBlackListed(String url) {
+
+		WhiteListModel wl = new WhiteListModel();
+		// String
+		// query="SELECT * FROM useraccounts where (username like ? OR email like ?) and pass = ?";
+		String query = "select * from phishtankurls where url like '"+url+"'";
+		// UserModel um=null;
+		List list = DBUtils.getBeanList(WhiteListModel.class, query);
+		if (list.size() > 0) {
+
+			return true;
+
+		}
+		return false;
+	}
+
+	public static void main(String[] args) {
+		boolean b = isBlackListed("http://2933517.com/js");
+		System.out.println(b);
+	}
+}

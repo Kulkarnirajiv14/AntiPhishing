@@ -1,0 +1,50 @@
+package com.feature.urls;
+
+public class PageRankFeatureImpl implements IFeature<String, String> {
+
+	@Override
+	public String extractFeature(String url) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public static void main(String[] args) {
+
+		AlexaSEO obj = new AlexaSEO();
+		System.out.println("Ranking : " + obj.getAlexaRanking("facebook.com"));
+
+	}
+
+	public int getAlexaRanking(String domain) {
+
+		int result = 0;
+
+		String url = "http://data.alexa.com/data?cli=10&url=" + domain;
+
+		try {
+
+			URLConnection conn = new URL(url).openConnection();
+			InputStream is = conn.getInputStream();
+
+			DocumentBuilder dBuilder = DocumentBuilderFactory.newInstance()
+					.newDocumentBuilder();
+			Document doc = dBuilder.parse(is);
+
+			Element element = doc.getDocumentElement();
+
+			NodeList nodeList = element.getElementsByTagName("POPULARITY");
+			if (nodeList.getLength() > 0) {
+				Element elementAttribute = (Element) nodeList.item(0);
+				String ranking = elementAttribute.getAttribute("TEXT");
+				if (!"".equals(ranking)) {
+					result = Integer.valueOf(ranking);
+				}
+			}
+
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+
+		return result;
+	}
+}

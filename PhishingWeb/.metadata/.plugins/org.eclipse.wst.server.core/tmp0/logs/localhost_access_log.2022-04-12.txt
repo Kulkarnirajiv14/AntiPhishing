@@ -1,0 +1,13 @@
+127.0.0.1 - - [12/Apr/2022:12:17:07 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [12/Apr/2022:12:17:08 +0530] "GET /AntiPhishingWeb/pages/signin.jsp HTTP/1.1" 200 4194
+0:0:0:0:0:0:0:1 - - [12/Apr/2022:12:17:08 +0530] "GET /AntiPhishingWeb/theme/js/jquery-2.1.1.min.js HTTP/1.1" 200 84245
+0:0:0:0:0:0:0:1 - - [12/Apr/2022:12:17:08 +0530] "GET /AntiPhishingWeb/theme/css/stylesighup.css HTTP/1.1" 200 2951
+127.0.0.1 - - [12/Apr/2022:12:17:15 +0530] "GET /AntiPhishingWeb/pages/signin.jsp HTTP/1.1" 200 4194
+127.0.0.1 - - [12/Apr/2022:12:17:15 +0530] "GET /AntiPhishingWeb/theme/css/stylesighup.css HTTP/1.1" 200 2951
+127.0.0.1 - - [12/Apr/2022:12:17:15 +0530] "GET /AntiPhishingWeb/theme/js/jquery-2.1.1.min.js HTTP/1.1" 200 84245
+127.0.0.1 - - [12/Apr/2022:12:17:16 +0530] "GET /favicon.ico HTTP/1.1" 404 1016
+127.0.0.1 - - [12/Apr/2022:12:17:19 +0530] "POST /AntiPhishingWeb/pages/signin.jsp?methodId=checkLogin HTTP/1.1" 200 19
+127.0.0.1 - - [12/Apr/2022:12:17:41 +0530] "POST /AntiPhishingWeb/pages/signin.jsp?methodId=checkLogin HTTP/1.1" 200 19
+127.0.0.1 - - [12/Apr/2022:12:18:04 +0530] "POST /AntiPhishingWeb/pages/signin.jsp?methodId=checkLogin HTTP/1.1" 200 19
+127.0.0.1 - - [12/Apr/2022:12:19:22 +0530] "POST /AntiPhishingWeb/pages/signin.jsp?methodId=checkLogin HTTP/1.1" 200 19
+127.0.0.1 - - [12/Apr/2022:12:20:42 +0530] "POST /AntiPhishingWeb/pages/signin.jsp?methodId=registerNewUser HTTP/1.1" 200 52

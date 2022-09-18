@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;antiPhishing&apos; to &apos;AntiPhishingWeb&apos;" description="Rename resource &apos;antiPhishing&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/antiPhishing" name="AntiPhishingWeb" stamp="1557487074739" updateReferences="true"/>
+</session>

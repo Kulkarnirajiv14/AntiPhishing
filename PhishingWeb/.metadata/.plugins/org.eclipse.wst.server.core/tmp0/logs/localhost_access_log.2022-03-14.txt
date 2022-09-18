@@ -1,0 +1,9 @@
+127.0.0.1 - - [14/Mar/2022:16:20:19 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [14/Mar/2022:16:20:20 +0530] "GET /AntiPhishingWeb/pages/signin.jsp HTTP/1.1" 200 4194
+0:0:0:0:0:0:0:1 - - [14/Mar/2022:16:20:20 +0530] "GET /AntiPhishingWeb/theme/css/stylesighup.css HTTP/1.1" 200 2951
+0:0:0:0:0:0:0:1 - - [14/Mar/2022:16:20:20 +0530] "GET /AntiPhishingWeb/theme/js/jquery-2.1.1.min.js HTTP/1.1" 200 84245
+127.0.0.1 - - [14/Mar/2022:16:20:30 +0530] "GET /AntiPhishingWeb/pages/signin.jsp HTTP/1.1" 200 4194
+127.0.0.1 - - [14/Mar/2022:16:20:30 +0530] "GET /AntiPhishingWeb/theme/css/stylesighup.css HTTP/1.1" 200 -
+127.0.0.1 - - [14/Mar/2022:16:20:34 +0530] "POST /AntiPhishingWeb/pages/signin.jsp?methodId=checkLogin HTTP/1.1" 200 19
+127.0.0.1 - - [14/Mar/2022:16:20:35 +0530] "GET /AntiPhishingWeb/pages/index.jsp HTTP/1.1" 200 4440
+127.0.0.1 - - [14/Mar/2022:16:20:35 +0530] "GET /AntiPhishingWeb/theme/img/bg1.jpg HTTP/1.1" 200 76050

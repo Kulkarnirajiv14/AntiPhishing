@@ -1,0 +1,11 @@
+package com.feature.urls;
+
+public class PageRankFeatureImpl implements IFeature<String, String> {
+
+	@Override
+	public String extractFeature(String s) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

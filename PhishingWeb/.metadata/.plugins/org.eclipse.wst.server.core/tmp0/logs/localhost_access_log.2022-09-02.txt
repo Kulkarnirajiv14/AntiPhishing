@@ -1,0 +1,15 @@
+127.0.0.1 - - [02/Sep/2022:15:37:01 +0100] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [02/Sep/2022:15:37:03 +0100] "GET /AntiPhishingWeb/pages/signin.jsp HTTP/1.1" 200 4187
+0:0:0:0:0:0:0:1 - - [02/Sep/2022:15:37:10 +0100] "GET /AntiPhishingWeb/pages/signin.jsp HTTP/1.1" 200 4187
+0:0:0:0:0:0:0:1 - - [02/Sep/2022:15:37:11 +0100] "GET /favicon.ico HTTP/1.1" 404 1016
+0:0:0:0:0:0:0:1 - - [02/Sep/2022:16:10:22 +0100] "POST /AntiPhishingWeb/pages/signin.jsp?methodId=checkLogin HTTP/1.1" 200 13
+0:0:0:0:0:0:0:1 - - [02/Sep/2022:16:10:22 +0100] "GET /AntiPhishingWeb/pages/index.jsp HTTP/1.1" 200 4600
+0:0:0:0:0:0:0:1 - - [02/Sep/2022:16:11:02 +0100] "POST /AntiPhishingWeb/connector/ajax.jsp?methodId=checkURL HTTP/1.1" 200 10
+0:0:0:0:0:0:0:1 - - [02/Sep/2022:16:11:09 +0100] "GET /AntiPhishingWeb/pages/history.jsp HTTP/1.1" 200 14238
+0:0:0:0:0:0:0:1 - - [02/Sep/2022:16:11:09 +0100] "GET /AntiPhishingWeb/theme/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 31000
+0:0:0:0:0:0:0:1 - - [02/Sep/2022:16:11:09 +0100] "GET /AntiPhishingWeb/theme/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 77160
+0:0:0:0:0:0:0:1 - - [02/Sep/2022:16:11:38 +0100] "POST /AntiPhishingWeb/connector/ajax.jsp?methodId=checkURL HTTP/1.1" 200 10
+0:0:0:0:0:0:0:1 - - [02/Sep/2022:16:11:54 +0100] "POST /AntiPhishingWeb/connector/ajax.jsp?methodId=checkURL HTTP/1.1" 200 10
+0:0:0:0:0:0:0:1 - - [02/Sep/2022:16:12:25 +0100] "POST /AntiPhishingWeb/connector/ajax.jsp?methodId=checkURL HTTP/1.1" 200 10
+0:0:0:0:0:0:0:1 - - [02/Sep/2022:16:26:55 +0100] "POST /AntiPhishingWeb/connector/ajax.jsp?methodId=checkURL HTTP/1.1" 200 10
+0:0:0:0:0:0:0:1 - - [02/Sep/2022:16:27:15 +0100] "POST /AntiPhishingWeb/connector/ajax.jsp?methodId=checkURL HTTP/1.1" 200 10

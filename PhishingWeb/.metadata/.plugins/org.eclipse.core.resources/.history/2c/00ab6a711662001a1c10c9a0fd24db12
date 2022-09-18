@@ -1,0 +1,110 @@
+package com.test;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.Arrays;
+
+import com.feature.urls.IFeature;
+import com.feature.urls.PageRankFeatureImpl;
+import com.feature.urls.URLFeaturesImpl;
+import com.feature.urls.WebsiteAgeFeatureImpl;
+import com.feature.urls.WhoisModel;
+import com.helper.SpamModel;
+import com.helper.SvmClassifier;
+
+public class TestSVM {
+
+	public static void main(String[] args) {
+//		String url = "http://192.168.0.101/t";
+		String url = "http://paypal-identity-form.com/";
+		url="https://www.phishtank.com/";
+		
+		
+	
+		IFeature<SpamModel, String> urlInfo = new URLFeaturesImpl();
+		SpamModel spam = urlInfo.extractFeature(url);
+		IFeature<WhoisModel, String> whois = new WebsiteAgeFeatureImpl();
+		WhoisModel whoisModel = whois.extractFeature(host);
+		System.out.println("Ranking : " + whoisModel);
+		IFeature<Integer, String> obj = new PageRankFeatureImpl();
+		int pageRanking = obj.extractFeature(url);
+		System.out.println("Ranking : " + pageRanking);
+		System.out.println("Short URL: " + spam);
+		double[] data = new double[8];
+		data = new double[] { -1, 1, 1, 1, -1, -1, 1, 1};
+
+		// 1st param IP Address in URL
+		if (spam.ipAddressURLs > 0) {
+			data[0] = -1;
+		} else {
+			data[0] = 1;
+		}
+
+		// 2nd param in URL
+		if (url.length() < 54) {
+			data[1] = -1;
+		} else if (url.length() >= 54 && url.length() <= 75) {
+			data[1] = 0;
+		} else {
+			data[1] = 1;
+		}
+
+		// 3rd parameter in url
+		if (spam.shortenedURLS > 0) {
+			data[2] = -1;
+		} else {
+			data[2] = 1;
+		}
+
+		// 4th parameter in @
+		if (url.indexOf("@") != -1) {
+			data[3] = -1;
+		} else {
+			data[3] = 1;
+		}
+
+		// 5th parameter having_sub_domain
+		int count = spam.getSubDomainsCount();
+		if (count == 1) {
+			data[4] = -1;
+		} else if (count == 2) {
+			data[4] = 0;
+		} else {
+			data[4] = 1;
+		}
+
+		// 6th parameter domain_registeration_length
+		if (whoisModel.getCreationDateDays() < 365) {
+			data[5] = -1;
+		} else {
+			data[5] = 1;
+		}
+
+		// 7th parameter age_of_domain
+		if (whoisModel.getCreationDateDays() > 180)
+			data[6] = -1;
+		else
+			data[6] = 1;
+
+		// 8th parameter web_traffic
+		if (pageRanking < 100000) {
+			data[7] = -1;
+		} else if (pageRanking > 100000 && pageRanking < 200000) {
+			data[7] = 0;
+		} else {
+			data[7] = -1;
+		}
+		System.out.println(Arrays.toString(data));
+		
+		
+//		double d=SvmClassifier.getSVMPredication(new double[]{1,0,-1,1,1,-1,1,1});
+//		System.out.println(d);
+		double d2=SvmClassifier.getSVMPredication(data);
+		System.out.println(d2);
+		if(d2==0){
+			System.out.println("PHISHING");
+		}else{
+			System.out.println("NORMAL");
+		}
+	}
+}

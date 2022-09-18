@@ -1,0 +1,9 @@
+127.0.0.1 - - [13/Sep/2022:14:58:54 +0100] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [13/Sep/2022:14:58:56 +0100] "GET /AntiPhishingWeb/pages/signin.jsp HTTP/1.1" 200 4187
+0:0:0:0:0:0:0:1 - - [13/Sep/2022:14:58:56 +0100] "GET /AntiPhishingWeb/theme/js/jquery-2.1.1.min.js HTTP/1.1" 200 84245
+0:0:0:0:0:0:0:1 - - [13/Sep/2022:14:58:56 +0100] "GET /AntiPhishingWeb/theme/css/stylesighup.css HTTP/1.1" 200 2951
+0:0:0:0:0:0:0:1 - - [13/Sep/2022:14:59:09 +0100] "GET /AntiPhishingWeb/pages/signin.jsp HTTP/1.1" 200 4187
+0:0:0:0:0:0:0:1 - - [13/Sep/2022:14:59:10 +0100] "GET /favicon.ico HTTP/1.1" 404 1016
+0:0:0:0:0:0:0:1 - - [13/Sep/2022:15:00:42 +0100] "POST /AntiPhishingWeb/pages/signin.jsp?methodId=checkLogin HTTP/1.1" 200 13
+0:0:0:0:0:0:0:1 - - [13/Sep/2022:15:00:42 +0100] "GET /AntiPhishingWeb/pages/index.jsp HTTP/1.1" 200 4600
+0:0:0:0:0:0:0:1 - - [13/Sep/2022:15:01:14 +0100] "POST /AntiPhishingWeb/connector/ajax.jsp?methodId=checkURL HTTP/1.1" 200 8

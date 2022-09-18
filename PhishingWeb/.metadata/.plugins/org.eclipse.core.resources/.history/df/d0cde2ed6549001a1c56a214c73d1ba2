@@ -1,0 +1,54 @@
+package com.constant;
+
+import java.io.File;
+
+public class ServerConstants {
+	public static final String db_driver = "com.mysql.jdbc.Driver";
+	
+	public static final String db_user = "root";
+	public static final String db_pwd = "";
+	public static final String db_url = "jdbc:mysql://localhost/baitalarmsvm";
+	
+	
+//	public static final String db_user = "bait";
+//	public static final String db_pwd = "bait";
+//	public static final String db_url = "jdbc:mysql://192.168.0.114:3307/baitalarmsvm";
+	
+	
+	public static final String PARSING_FILE="D://work//project//antiPhishing//";
+	
+	
+	public static final String SVM_DIR = PROJECT_DATASET_DIR + "\\svm\\";
+	public static final String SVM_MODEL_FILE = SVM_DIR + "svm.model";
+	public static final String SVM_TRAINING_SET = SVM_DIR + "svmTraining.arff";
+	public static final String APPLICATION_NAME = "Cloudability";
+	
+	
+	
+	
+	/*public static String HADOOP_IP_DIR = "/usr/local/baitalarm_hadoop_ip";	*/	// On Windows folder will be created on Root Drive
+	
+	public static String HADOOP_OP_DIR = "/usr/local/baitalarm_hadoop_op";
+	public static String SPAM_DIR = "/usr/local/";
+	
+	/*static{
+		 File f = new File(ServerConstants.HADOOP_IP_DIR);
+		 f.mkdirs();
+		 File f2 = new File(ServerConstants.HADOOP_OP_DIR);
+		 f2.mkdirs();
+	}*/
+	
+//	//public static final String STOP_WORDS_FILE ="D:/work/project/WebClustering/WebClustering/stopwords/stopwords_en.txt";
+//	public static final String STOP_WORDS_FILE ="stopwords_en.txt";   
+
+//	public static final String DEFAULT_SMTP_USER="testyouracc@gmail.com";
+//	public static final String DEFAULT_SMTP_HOST="raj@1234";
+	           
+//	public static final String db_user = "project";
+//	public static final String db_pwd = "project";
+//	public static final String db_url = "jdbc:mysql://node16984-env-9683988.ind-cloud.everdata.com/baitalarm";
+//	
+	//String URL =  "jdbc:mysql://node16984-env-9683988.ind-cloud.everdata.com/{your_database_name}";
+	
+	 public static String textMassege= "<hrml><a href=http:192.168.0.103\"google.com\"";
+}

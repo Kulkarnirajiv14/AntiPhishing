@@ -1,0 +1,11 @@
+127.0.0.1 - - [01/Sep/2022:18:27:38 +0100] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [01/Sep/2022:18:27:40 +0100] "GET /AntiPhishingWeb/pages/signin.jsp HTTP/1.1" 200 4187
+127.0.0.1 - - [01/Sep/2022:19:42:55 +0100] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [01/Sep/2022:19:42:56 +0100] "GET /AntiPhishingWeb/pages/signin.jsp HTTP/1.1" 200 4187
+0:0:0:0:0:0:0:1 - - [01/Sep/2022:19:44:09 +0100] "GET /AntiPhishingWeb/pages/signin.jsp HTTP/1.1" 200 4187
+0:0:0:0:0:0:0:1 - - [01/Sep/2022:19:44:10 +0100] "GET /favicon.ico HTTP/1.1" 404 1016
+0:0:0:0:0:0:0:1 - - [01/Sep/2022:19:44:47 +0100] "POST /AntiPhishingWeb/pages/signin.jsp?methodId=checkLogin HTTP/1.1" 200 13
+0:0:0:0:0:0:0:1 - - [01/Sep/2022:19:44:47 +0100] "GET /AntiPhishingWeb/pages/index.jsp HTTP/1.1" 200 4600
+0:0:0:0:0:0:0:1 - - [01/Sep/2022:19:44:57 +0100] "POST /AntiPhishingWeb/connector/ajax.jsp?methodId=checkURL HTTP/1.1" 200 10
+0:0:0:0:0:0:0:1 - - [01/Sep/2022:19:45:10 +0100] "POST /AntiPhishingWeb/connector/ajax.jsp?methodId=checkURL HTTP/1.1" 200 10
+0:0:0:0:0:0:0:1 - - [01/Sep/2022:19:45:21 +0100] "POST /AntiPhishingWeb/connector/ajax.jsp?methodId=checkURL HTTP/1.1" 200 10
